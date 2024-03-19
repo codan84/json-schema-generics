@@ -1,0 +1,37 @@
+{
+  "id": "OneOfEvent",
+  "title": "OneOfEvent",
+  "type": "object",
+  "required": [
+    "operation",
+    "entity_name",
+    "payload"
+  ],
+  "properties": {
+    "operation": {
+      "enum": [
+        "create",
+        "update",
+        "delete"
+      ]
+    },
+    "entity_name": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "property"
+      ]
+    },
+    "payload": {
+      "type": "object",
+      "oneOf": [
+        {
+          "$ref": "schemas/property-schemas/draft.json"
+        },
+        {
+          "$ref": "schemas/property-schemas/property.json"
+        }
+      ]
+    }
+  }
+}

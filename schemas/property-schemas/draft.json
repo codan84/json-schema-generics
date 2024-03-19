@@ -1,0 +1,19 @@
+{
+  "id": "Draft",
+  "title": "Draft",
+  "type": "object",
+  "required": [
+    "address"
+  ],
+  "properties": {
+    "address": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "description": {
+      "type": "string"
+    }
+  }
+}

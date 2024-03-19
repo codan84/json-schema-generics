@@ -1,0 +1,36 @@
+{
+  "id": "DynamicRefEvent",
+  "title": "DynamicRefEvent",
+  "type": "object",
+  "$defs": {
+    "payload": {
+      "$dynamicAnchor": "T",
+      "not": true
+    },
+    "entity_name": {
+      "$dynamicAnchor": "T2",
+      "not": true
+    }
+  },
+  "required": [
+    "operation",
+    "entity_name",
+    "payload"
+  ],
+  "properties": {
+    "operation": {
+      "enum": [
+        "create",
+        "update",
+        "delete"
+      ]
+    },
+    "entity_name": {
+      "type": "string",
+      "$dynamicRef": "#T2"
+    },
+    "payload": {
+      "$dynamicRef": "#T"
+    }
+  }
+}

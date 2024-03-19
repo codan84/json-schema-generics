@@ -1,0 +1,15 @@
+{
+  "id": "DraftEvent",
+  "title": "DraftfEvent",
+  "$defs": {
+    "payload": {
+      "$dynamicAnchor": "T",
+      "$ref": "schemas/property-schemas/draft.json"
+    },
+    "entity_name": {
+      "$dynamicAnchor": "T2",
+      "const": "draft"
+    }
+  },
+  "$ref": "schemas/dynamic-ref-event/generic-event.json"
+}

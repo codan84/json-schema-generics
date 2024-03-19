@@ -1,0 +1,15 @@
+{
+  "id": "PropertyEvent",
+  "title": "PropertyEvent",
+  "$defs": {
+    "payload": {
+      "$dynamicAnchor": "T",
+      "$ref": "schemas/property-schemas/property.json"
+    },
+    "entity_name": {
+      "$dynamicAnchor": "T2",
+      "const": "property"
+    }
+  },
+  "$ref": "schemas/dynamic-ref-event/generic-event.json"
+}

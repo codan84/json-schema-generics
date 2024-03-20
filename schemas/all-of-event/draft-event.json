@@ -1,0 +1,26 @@
+{
+  "id": "DraftEvent",
+  "title": "DraftEvent",
+  "type": "object",
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "$ref": "schemas/all-of-event/event-template.json"
+    },
+    {
+      "type": "object",
+      "required": [
+        "entity_name",
+        "payload"
+      ],
+      "properties": {
+        "entity_name": {
+          "const": "draft"
+        },
+        "payload": {
+          "$ref": "schemas/property-schemas/draft.json"
+        }
+      }
+    }
+  ]
+}

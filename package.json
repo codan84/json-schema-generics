@@ -9,7 +9,9 @@
     "dynamic-ref:qt": "quicktype -s schema ./schemas/dynamic-ref-event/draft-event.json -o ./__generated_types__/dynamic-ref/quicktype-draft-event.ts --just-types",
     "dynamic-ref:j2t": "npx json2ts --no-additionalProperties --no-enableConstEnums --ignoreMinAndMaxItems -i ./schemas/dynamic-ref-event/draft-event.json -o ./__generated_types__/dynamic-ref/json2ts-draft-event.ts",
     "copy-paste:qt": "quicktype -s schema ./schemas/copy-paste-event/draft-event.json -o ./__generated_types__/copy-paste/quicktype-draft-event.ts --just-types",
-    "copy-paste:j2t": "json2ts --no-additionalProperties --no-enableConstEnums --ignoreMinAndMaxItems -i ./schemas/copy-paste-event/draft-event.json -o ./__generated_types__/copy-paste/json2ts-draft-event.ts"
+    "copy-paste:j2t": "json2ts --no-additionalProperties --no-enableConstEnums --ignoreMinAndMaxItems -i ./schemas/copy-paste-event/draft-event.json -o ./__generated_types__/copy-paste/json2ts-draft-event.ts",
+    "all-of:qt": "quicktype -s schema ./schemas/all-of-event/draft-event.json -o ./__generated_types__/all-of/quicktype-draft-event.ts --just-types",
+    "all-of:j2t": "json2ts --no-additionalProperties --no-enableConstEnums --ignoreMinAndMaxItems -i ./schemas/all-of-event/draft-event.json -o ./__generated_types__/all-of/json2ts-draft-event.ts"
   },
   "keywords": [],
   "author": "",

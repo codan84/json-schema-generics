@@ -1,0 +1,18 @@
+{
+  "id": "TemplateEvent",
+  "title": "TemplateEvent",
+  "type": "object",
+  "required": [
+    "operation"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "operation": {
+      "enum": [
+        "create",
+        "update",
+        "delete"
+      ]
+    }
+  }
+}

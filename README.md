@@ -2,6 +2,22 @@
 
 ## Approaches
 
+### allOf
+
+https://json-schema.org/understanding-json-schema/reference/combining#allOf
+
+Pros:
+- widely supported
+- add new specific event per entity
+- changes to the event schema apply to all events
+
+Cons:
+- validation will fail on any schemas where entities referenced in `allOf` have `additionalProperties: false`
+
+Codegen support
+- Quicktype - :x:
+- json2ts - :white_check_mark:
+
 ### oneOf
 
 https://json-schema.org/understanding-json-schema/reference/combining#oneOf

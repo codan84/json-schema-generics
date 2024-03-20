@@ -7,6 +7,7 @@
     "entity_name",
     "payload"
   ],
+  "additionalProperties": false,
   "properties": {
     "operation": {
       "enum": [
@@ -23,13 +24,12 @@
       ]
     },
     "payload": {
-      "type": "object",
       "oneOf": [
         {
-          "$ref": "schemas/property-schemas/draft.json"
+          "$ref": "schemas/property-schemas/property.json"
         },
         {
-          "$ref": "schemas/property-schemas/property.json"
+          "$ref": "schemas/property-schemas/draft.json"
         }
       ]
     }

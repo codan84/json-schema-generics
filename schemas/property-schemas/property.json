@@ -4,8 +4,10 @@
   "type": "object",
   "required": [
     "address",
-    "description"
+    "description",
+    "price"
   ],
+  "additionalProperties": false,
   "properties": {
     "address": {
       "type": "array",
@@ -15,6 +17,9 @@
     },
     "description": {
       "type": "string"
+    },
+    "price": {
+      "type": "number"
     }
   }
 }

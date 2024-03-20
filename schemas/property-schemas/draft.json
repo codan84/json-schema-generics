@@ -5,6 +5,7 @@
   "required": [
     "address"
   ],
+  "additionalProperties": false,
   "properties": {
     "address": {
       "type": "array",

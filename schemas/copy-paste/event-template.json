@@ -1,0 +1,29 @@
+{
+  "id": "TemplateEvent",
+  "title": "TemplateEvent",
+  "type": "object",
+  "required": [
+    "operation",
+    "entity_name",
+    "payload"
+  ],
+  "properties": {
+    "operation": {
+      "enum": [
+        "create",
+        "update",
+        "delete"
+      ]
+    },
+    "entity_name": {
+      "const": "entity_name",
+      "description": "to be replaced with the actual entity name",
+      "not": true
+    },
+    "payload": {
+      "type": "object",
+      "description": "to be replaced with the actual entity payload",
+      "not": true
+    }
+  }
+}

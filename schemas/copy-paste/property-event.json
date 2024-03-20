@@ -1,0 +1,25 @@
+{
+  "id": "PropertyEvent",
+  "title": "PropertyEvent",
+  "type": "object",
+  "required": [
+    "operation",
+    "entity_name",
+    "payload"
+  ],
+  "properties": {
+    "operation": {
+      "enum": [
+        "create",
+        "update",
+        "delete"
+      ]
+    },
+    "entity_name": {
+      "const": "property"
+    },
+    "payload": {
+      "$ref": "schemas/property-schemas/property.json"
+    }
+  }
+}

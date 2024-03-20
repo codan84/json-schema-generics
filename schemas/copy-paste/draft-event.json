@@ -1,0 +1,25 @@
+{
+  "id": "DraftEvent",
+  "title": "DraftEvent",
+  "type": "object",
+  "required": [
+    "operation",
+    "entity_name",
+    "payload"
+  ],
+  "properties": {
+    "operation": {
+      "enum": [
+        "create",
+        "update",
+        "delete"
+      ]
+    },
+    "entity_name": {
+      "const": "draft"
+    },
+    "payload": {
+      "$ref": "schemas/property-schemas/draft.json"
+    }
+  }
+}

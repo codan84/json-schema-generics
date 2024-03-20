@@ -4,7 +4,7 @@
   "$defs": {
     "payload": {
       "$dynamicAnchor": "T",
-      "$ref": "schemas/property-schemas/property.json"
+      "$ref": "../property-schemas/property.json"
     },
     "entity_name": {
       "$dynamicAnchor": "T2",

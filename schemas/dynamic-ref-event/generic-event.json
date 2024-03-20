@@ -17,6 +17,7 @@
     "entity_name",
     "payload"
   ],
+  "additionalProperties": false,
   "properties": {
     "operation": {
       "enum": [

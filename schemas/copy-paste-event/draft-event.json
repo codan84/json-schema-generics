@@ -1,12 +1,13 @@
 {
-  "id": "PropertyEvent",
-  "title": "PropertyEvent",
+  "id": "DraftEvent",
+  "title": "DraftEvent",
   "type": "object",
   "required": [
     "operation",
     "entity_name",
     "payload"
   ],
+  "additionalProperties": false,
   "properties": {
     "operation": {
       "enum": [
@@ -16,10 +17,10 @@
       ]
     },
     "entity_name": {
-      "const": "property"
+      "const": "draft"
     },
     "payload": {
-      "$ref": "schemas/property-schemas/property.json"
+      "$ref": "schemas/property-schemas/draft.json"
     }
   }
 }

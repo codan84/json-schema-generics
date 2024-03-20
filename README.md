@@ -17,9 +17,8 @@ Cons:
 - when generating types we pull all entities even if interested in only few
 
 Codegen support
-- Quicktype - no
-- json2ts - yes
-
+- Quicktype - :x:
+- json2ts - :white_check_mark:
 
 ### dynamicRef + dynamicAnchor
 
@@ -38,6 +37,10 @@ Cons:
 - latest draft, support might be sketchy (support needs investigation)
 - hard to read/understand
 
+Codegen support
+- Quicktype - :x:
+- json2ts - :x:
+
 ### copy-paste
 
 Create a `template-event`, this event then can be copy-pasted and certain attributes changed to get entity-specific event.
@@ -47,6 +50,7 @@ Pros:
 
 Cons:
 - changes to the base event require changes to all entity-specific events
+- codegen has to run against each specific event unless they are all collected in some kind of `root` schema
 
 ---
 
@@ -68,7 +72,7 @@ Cons:
 - Correctly handles union types
 
 **Cons**:
-- ...
+- Issue with dereferencing, limiting how we structure schemas: [GH Issue](https://github.com/bcherny/json-schema-to-typescript/issues/324)
 
 
 ### Dereferencing

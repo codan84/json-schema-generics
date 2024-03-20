@@ -4,10 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "one-of-event:qt": "quicktype -s schema ./schemas/one-of-event/event.json -o ./__generated_types__/one-of-event/quicktype-types.ts --just-types --explicit-unions",
-    "one-of-event:json2ts": "json2ts --no-additionalProperties --no-enableConstEnums --ignoreMinAndMaxItems -i ./schemas/one-of-event/event.json -o ./__generated_types__/one-of-event/json2ts-types.ts",
-    "dynamic-ref:qt": "quicktype -s schema ./schemas/dynamic-ref-event/draft-event.json -o ./__generated_types__/dynamic-ref/quicktype-draft-event.ts --just-types --explicit-unions",
-    "dynamic-ref:json2ts": "npx json2ts --no-additionalProperties --no-enableConstEnums --ignoreMinAndMaxItems -i ./schemas/dynamic-ref-event/draft-event.json -o ./__generated_types__/dynamic-ref/json2ts-draft-event.ts"
+    "one-of-event:qt": "quicktype -s schema ./schemas/one-of-event/event.json -o ./__generated_types__/one-of-event/quicktype-types.ts --just-types",
+    "one-of-event:j2t": "json2ts --no-additionalProperties --no-enableConstEnums --ignoreMinAndMaxItems -i ./schemas/one-of-event/event.json -o ./__generated_types__/one-of-event/json2ts-types.ts",
+    "dynamic-ref:qt": "quicktype -s schema ./schemas/dynamic-ref-event/draft-event.json -o ./__generated_types__/dynamic-ref/quicktype-draft-event.ts --just-types",
+    "dynamic-ref:j2t": "npx json2ts --no-additionalProperties --no-enableConstEnums --ignoreMinAndMaxItems -i ./schemas/dynamic-ref-event/draft-event.json -o ./__generated_types__/dynamic-ref/json2ts-draft-event.ts",
+    "copy-paste:qt": "quicktype -s schema ./schemas/copy-paste-event/draft-event.json -o ./__generated_types__/copy-paste/quicktype-draft-event.ts --just-types",
+    "copy-paste:j2t": "json2ts --no-additionalProperties --no-enableConstEnums --ignoreMinAndMaxItems -i ./schemas/copy-paste-event/draft-event.json -o ./__generated_types__/copy-paste/json2ts-draft-event.ts"
   },
   "keywords": [],
   "author": "",

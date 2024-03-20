@@ -36,6 +36,7 @@ Pros:
 Cons:
 - latest draft, support might be sketchy (support needs investigation)
 - hard to read/understand
+- codegen has to run against each specific event unless they are all collected in some kind of `root` schema
 
 Codegen support
 - Quicktype - :x:
@@ -51,6 +52,10 @@ Pros:
 Cons:
 - changes to the base event require changes to all entity-specific events
 - codegen has to run against each specific event unless they are all collected in some kind of `root` schema
+
+Codegen support
+- Quicktype - :white_check_mark:
+- json2ts - :white_check_mark:
 
 ---
 
@@ -73,7 +78,6 @@ Cons:
 
 **Cons**:
 - Issue with dereferencing, limiting how we structure schemas: [GH Issue](https://github.com/bcherny/json-schema-to-typescript/issues/324)
-
 
 ### Dereferencing
 
